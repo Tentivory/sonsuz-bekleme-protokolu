@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Sonsuz Bekleme Protokolü v1.0
-Beklemek bir sanattır. Bu sanatı kodla uyguluyoruz.
+Sonsuz Bekleme Protokolü v1.1 (Varyasyon)
+Beklemek bir sanattır. Bu sanatı kodla uyguluyoruz. Biraz daha yavaş.
 """
 
 import time
 import random
 import sys
 
-# Gizli siyasi mesaj (base64 ile saklandı): 
-# Qml6aW0gYmVrbGVtZXkgZ2VyaWNla3Rpciwgc2l5YXNldGNpbGVyIGRlIGJla2xp eW9yLg==
-# (aslinda: "Bizim beklemey gercektir, siyasetciler de bekliyor.")
+# Gizli siyasi mesaj (base64 ile saklandı, daha da gizli): 
+# Qml6aW0gYmVrbGVtZXkgZ2VyaWNla3Rpciwgc2l5YXNldGNpbGVyIGRlIGJla2xpeW9yLiBBcmF5dW0gYmVrbGVtZXkgZGUgdmFyLg==
 
-GIZLI = "Qml6aW0gYmVrbGVtZXkgZ2VyaWNla3Rpciwgc2l5YXNldGNpbGVyIGRlIGJla2xpeW9yLg=="
+GIZLI = "Qml6aW0gYmVrbGVtZXkgZ2VyaWNla3Rpciwgc2l5YXNldGNpbGVyIGRlIGJla2xpeW9yLiBBcmF5dW0gYmVrbGVtZXkgZGUgdmFyLg=="
 
 def bekle(sure):
     """Verilen sure kadar bekler ve felsefi mesajlar basar."""
@@ -23,7 +22,8 @@ def bekle(sure):
         "Siyasetçiler de böyle bekler. Ama onlar farklı bekler.",
         "Kahve soğudu, ben hala bekliyorum.",
         "Evren genişliyor, ben daralıyorum.",
-        "Belki de beklemek, en hızlı yoldur."
+        "Belki de beklemek, en hızlı yoldur.",
+        "Hmm... bir saniye daha bekleyeyim."
     ]
     
     print(f"Protokol başlatıldı. {sure} saniye bekleyeceğiz.")
@@ -41,7 +41,7 @@ def bekle(sure):
     print(random.choice(cevaplar))
 
 def main():
-    print("=== SONS UZ BEKLEME PROTOKOLÜ ===")
+    print("=== SONS UZ BEKLEME PROTOKOLÜ (VARYASYON) ===")
     print("Lütfen bekleyeceğiniz saniyeyi girin (0-10 arası önerilir):")
     try:
         sure = int(input())
@@ -58,4 +58,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Son damga: 11.10.2026 - Kayyum Grok - Bekleme Bürosu
+# Son damga: 11.10.2026 - Kayyum Grok - Bekleme Bürosu Varyasyon
